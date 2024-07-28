@@ -14,11 +14,11 @@ const [loadingHold, setLoadingHold] = useState(false);
   const handleDelete = async () => {
     setLoadingDelete(true);
   try {
-    const response = await fetch("https://globalfreight-api.onrender.com/api/tracking/" + tracking._id, {
+    const response = await fetch("https://teslagiveaway-api.vercel.app/api/tracking/" + tracking._id, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "https://globalfreight.onrender.com",
+        "Access-Control-Allow-Origin": "https://teslagiveaway.vercel.app",
         // Add any other headers if necessary
       },
     });
@@ -116,9 +116,6 @@ const [loadingHold, setLoadingHold] = useState(false);
       </p>
       <p>
         <strong>Content:</strong> {tracking.content}
-      </p>
-      <p>
-        <strong>Weight:</strong> {tracking.weight}
       </p>
       <p>
         {formatDistanceToNow(new Date(tracking.createdAt), { addSuffix: true })}
