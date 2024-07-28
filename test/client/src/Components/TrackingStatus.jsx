@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/TrackingStatus.module.css";
 
+
 function TrackingStatus({ status, address, updateTime, name, content, weight, trackingNumber, comment }) {
   let statusDisplay;
   const commonStyles = {
@@ -76,13 +77,63 @@ function TrackingStatus({ status, address, updateTime, name, content, weight, tr
     },
   };
 
+  const CarIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+  </svg>
+);
+
+const ProgressBar = ({ status }) => {
+  const getProgress = () => {
+    switch (status) {
+      case 'pending': return '0%';
+      case 'intransit': return '50%';
+      case 'delivered': return '100%';
+      default: return '0%';
+    }
+  };
+
+  return (
+    <div style={{
+      width: '100%',
+      height: '4px',
+      backgroundColor: '#e0e0e0',
+      borderRadius: '2px',
+      position: 'relative',
+      marginBottom: '20px',
+    }}>
+      <div style={{
+        width: getProgress(),
+        height: '100%',
+        backgroundColor: '#333366',
+        borderRadius: '2px',
+        transition: 'width 0.5s ease-in-out',
+      }}/>
+      <div style={{
+        position: 'absolute',
+        top: '-10px',
+        left: getProgress(),
+        transform: 'translateX(-50%)',
+        transition: 'left 0.5s ease-in-out',
+      }}>
+        <div className={styles.pulsingCar}>
+          <CarIcon />
+        </div>
+      </div>
+    </div>
+  );
+};
+
   const renderStatusBar = (currentStatus) => (
+  <div>
+    <ProgressBar status={currentStatus} />
     <div style={commonStyles.statusBar}>
       <div style={{...commonStyles.statusStep, ...(currentStatus !== 'pending' ? commonStyles.activeStep : commonStyles.inactiveStep)}}>Label Created</div>
       <div style={{...commonStyles.statusStep, ...(currentStatus === 'intransit' || currentStatus === 'on hold' ? commonStyles.activeStep : commonStyles.inactiveStep)}}>In Transit</div>
       <div style={{...commonStyles.statusStep, ...(currentStatus === 'delivered' ? commonStyles.activeStep : commonStyles.inactiveStep)}}>Delivered</div>
     </div>
-  );
+  </div>
+);
 
   const renderDetails = () => (
     <div style={commonStyles.details}>
