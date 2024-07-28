@@ -55,7 +55,7 @@ function LandingPage() {
         <nav className={css.navBarWrap}>
           <div className={css.brandWrap}>
             <p>
-              <span>Global</span>Freight
+              <span>Tesla</span>Giveaway
             </p>
           </div>
           <button className={css.ctaBtn}>How it works</button>
