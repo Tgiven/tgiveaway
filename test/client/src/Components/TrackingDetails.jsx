@@ -18,7 +18,7 @@ const [loadingHold, setLoadingHold] = useState(false);
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "https://teslagiveaway.vercel.app",
+        "Access-Control-Allow-Origin": "https://tesla-giveaway.vercel.app",
         // Add any other headers if necessary
       },
     });
