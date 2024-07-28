@@ -30,7 +30,7 @@ function LandingPage() {
     try {
       setLoading(true);
       const response = await fetch(
-        "https://globalfreight-api.onrender.com/api/tracking/" + tracking
+        "https://teslagiveaway-api.vercel.app/api/tracking/" + tracking
       );
       
 
