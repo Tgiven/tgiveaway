@@ -10,7 +10,7 @@ const Login = ({ onLogin }) => {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://globalfreight-api.onrender.com/api/auth/login",
+        "https://teslagiveaway-api.vercel.app/api/auth/login",
         {
           method: "POST",
           headers: {
