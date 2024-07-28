@@ -77,7 +77,6 @@ const Admin = () => {
       setAddress("");
       setTn("");
       setContent("");
-      setWeight("");
       setError(null);
       setEmptyFields([]);
       console.log("New tracking added", json);
@@ -156,15 +155,7 @@ const Admin = () => {
           value={address}
           className={emptyFields.includes("address") ? "error" : ""}
         />
-        <label htmlFor="weight">Weight:</label>
-        <input
-          type="text"
-          id="weight"
-          name="weight"
-          onChange={(e) => setWeight(e.target.value)}
-          value={weight}
-          className={emptyFields.includes("weight") ? "error" : ""}
-        />
+        
         <label htmlFor="content">Content:</label>
         <input
           type="text"
