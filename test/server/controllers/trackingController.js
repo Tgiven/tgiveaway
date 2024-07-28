@@ -28,7 +28,7 @@ const getSingleTracking = async (req, res) => {
 
 //create all tracking info
 const createTracking = async (req, res) => {
-  const { name, address, tn, content, weight } = req.body;
+  const { name, address, tn, content } = req.body;
 
   let emptyFields = [];
 
@@ -44,16 +44,13 @@ const createTracking = async (req, res) => {
   if (!content) {
     emptyFields.push("content");
   }
-  if (!weight) {
-    emptyFields.push("weight");
-  }
   if (emptyFields.length > 0) {
     return res
       .status(400)
       .json({ error: "Please fill in all the fields", emptyFields });
   }
   try {
-    const tracking = await Tracking.create({ name, address, tn, content, weight });
+    const tracking = await Tracking.create({ name, address, tn, content });
     res.status(200).json(tracking);
   } catch (error) {
     console.log(error.message);
