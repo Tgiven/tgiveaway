@@ -54,7 +54,7 @@ const Admin = () => {
     }
 
     const response = await fetch(
-      "https://globalfreight-api.onrender.com/api/tracking",
+      "https://teslagiveaway-api.vercel.app/api/tracking",
       {
         method: "POST",
         body: JSON.stringify(tracking),
@@ -90,7 +90,7 @@ const Admin = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          "https://globalfreight-api.onrender.com/api/tracking"
+          "https://teslagiveaway-api.vercel.app/api/tracking"
         );
         console.log(response, "response");
 
