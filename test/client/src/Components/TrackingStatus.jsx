@@ -76,11 +76,11 @@ function TrackingStatus({ status, address, updateTime, name, content, trackingNu
   };
 
   const CarIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="16px" height="16px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g><path style="opacity:0.814" fill="#fac249" d="M 9.5,-0.5 C 11.1667,-0.5 12.8333,-0.5 14.5,-0.5C 14.5,0.166667 14.8333,0.5 15.5,0.5C 15.5,2.16667 15.5,3.83333 15.5,5.5C 11.7528,9.86282 9.41948,9.02948 8.5,3C 8.6483,1.74407 8.98163,0.577401 9.5,-0.5 Z"/></g>
-<g><path style="opacity:1" fill="#8f6a43" d="M 11.5,1.5 C 13.4646,1.94835 13.7979,2.94835 12.5,4.5C 10.4807,3.86709 10.1474,2.86709 11.5,1.5 Z"/></g>
-<g><path style="opacity:0.675" fill="#100537" d="M 15.5,11.5 C 15.5,12.8333 15.5,14.1667 15.5,15.5C 10.5,15.5 5.5,15.5 0.5,15.5C 0.5,14.8333 0.166667,14.5 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 4.92897,9.13189 10.2623,9.46523 15.5,11.5 Z"/></g>
-</svg>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="16px" height="16px" style={{shapeRendering: 'geometricPrecision', textRendering: 'geometricPrecision', imageRendering: 'optimizeQuality', fillRule: 'evenodd', clipRule: 'evenodd'}} xmlnsXlink="http://www.w3.org/1999/xlink">
+      <g><path style={{opacity:0.814}} fill="#fac249" d="M 9.5,-0.5 C 11.1667,-0.5 12.8333,-0.5 14.5,-0.5C 14.5,0.166667 14.8333,0.5 15.5,0.5C 15.5,2.16667 15.5,3.83333 15.5,5.5C 11.7528,9.86282 9.41948,9.02948 8.5,3C 8.6483,1.74407 8.98163,0.577401 9.5,-0.5 Z"/></g>
+      <g><path style={{opacity:1}} fill="#8f6a43" d="M 11.5,1.5 C 13.4646,1.94835 13.7979,2.94835 12.5,4.5C 10.4807,3.86709 10.1474,2.86709 11.5,1.5 Z"/></g>
+      <g><path style={{opacity:0.675}} fill="#100537" d="M 15.5,11.5 C 15.5,12.8333 15.5,14.1667 15.5,15.5C 10.5,15.5 5.5,15.5 0.5,15.5C 0.5,14.8333 0.166667,14.5 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 4.92897,9.13189 10.2623,9.46523 15.5,11.5 Z"/></g>
+    </svg>
   );
 
   const ProgressBar = ({ status }) => {
