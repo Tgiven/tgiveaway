@@ -54,38 +54,36 @@ const Admin = () => {
     }
 
     const response = await fetch(
-      "https://teslagiveaway-api.vercel.app/api/tracking",
-      {
-        method: "POST",
-        body: JSON.stringify(tracking),
-        headers: {
-          headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "https://tesla-giveaway.vercel.app",
-        // Add any other headers if necessary
-      },
-          "Access-Control-Allow-Headers": "*",
-        },
-      }
-    );
+  "https://teslagiveaway-api.vercel.app/api/tracking",
+  {
+    method: "POST",
+    body: JSON.stringify(tracking),
+    headers: {
+      "Content-Type": "application/json",
+      // Remove these headers from the request as they are meant to be in the server's response
+      // "Access-Control-Allow-Origin": "https://tesla-giveaway.vercel.app",
+      // "Access-Control-Allow-Headers": "*",
+    },
+  }
+);
 
-    const json = await response.json();
+if (!response.ok) {
+  const json = await response.json();
+  setError(json.error);
+  setEmptyFields(json.emptyFields);
+} else {
+  const json = await response.json();
+  setName("");
+  setAddress("");
+  setTn("");
+  setContent("");
+  setError(null);
+  setEmptyFields([]);
+  console.log("New tracking added", json);
+  dispatch({ type: "CREATE_TRACKING", payload: json });
+}
+setLoading(false);
 
-    if (!response.ok) {
-      setError(json.error);
-      setEmptyFields(json.emptyFields);
-    }
-    if (response.ok) {
-      setName("");
-      setAddress("");
-      setTn("");
-      setContent("");
-      setError(null);
-      setEmptyFields([]);
-      console.log("New tracking added", json);
-      dispatch({ type: "CREATE_TRACKING", payload: json });
-    }
-    setLoading(false);
   };
 
   useEffect(() => {
