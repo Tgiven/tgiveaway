@@ -117,10 +117,11 @@ function TrackingStatus({ status, address, updateTime, name, content, trackingNu
             
           </div>
         </div>
-      </div>
-      <div className={styles.pulsingCar}>
+        <div className={styles.pulsingCar}>
               <CarIcon />
             </div>
+      </div>
+      
     );
   };
 
