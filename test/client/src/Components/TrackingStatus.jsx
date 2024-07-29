@@ -92,30 +92,31 @@ function TrackingStatus({ status, address, updateTime, name, content, trackingNu
     };
 
     return (
-      <div style={{
-        width: '100%',
-        height: '6px',
-        backgroundColor: '#e0e0e0',
-        borderRadius: '3px',
-        position: 'relative',
-        marginBottom: '20px',
-      }}>
+      <div style={{ position: 'relative', marginBottom: '40px' }}>
         <div style={{
-          width: getProgress(),
-          height: '100%',
-          backgroundColor: '#333366',
+          width: '100%',
+          height: '6px',
+          backgroundColor: '#e0e0e0',
           borderRadius: '3px',
-          transition: 'width 0.5s ease-in-out',
-        }}/>
-        <div style={{
-          position: 'absolute',
-          top: '-12px',
-          left: getProgress(),
-          transform: 'translateX(-50%)',
-          transition: 'left 0.5s ease-in-out',
+          position: 'relative',
         }}>
-          <div className={styles.pulsingCar}>
-            <CarIcon />
+          <div style={{
+            width: getProgress(),
+            height: '100%',
+            backgroundColor: '#333366',
+            borderRadius: '3px',
+            transition: 'width 0.5s ease-in-out',
+          }} />
+          <div style={{
+            position: 'absolute',
+            top: '20px', // Adjust the distance to place the car icon below the progress bar
+            left: getProgress(),
+            transform: 'translateX(-50%)',
+            transition: 'left 0.5s ease-in-out',
+          }}>
+            <div className={styles.pulsingCar}>
+              <CarIcon />
+            </div>
           </div>
         </div>
       </div>
