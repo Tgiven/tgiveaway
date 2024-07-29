@@ -13,13 +13,13 @@ dotenv.config();
 
 const app = express();
 
-// app.use(
-//   cors({
-//     origin: process.env.ALLOWED_ORIGINS,
-//     methods: ['GET', 'POST', 'PATCH', 'DELETE'],
-//     credentials: true
-//   })
-// );
+app.use(
+  cors({
+    origin: process.env.ALLOWED_ORIGINS,
+    methods: ['GET', 'POST', 'PATCH', 'DELETE'],
+    credentials: true
+  })
+);
 // const allowedOrigins = ['https://tesla-giveaway.vercel.app', 'http://localhost:3000'];
 
 // app.use(cors({
