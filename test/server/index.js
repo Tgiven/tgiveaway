@@ -13,13 +13,28 @@ dotenv.config();
 
 const app = express();
 
-app.use(
-  cors({
-    origin: process.env.ALLOWED_ORIGINS,
-    methods: ['GET', 'POST', 'PATCH', 'DELETE'],
-    credentials: true
-  })
-);
+// app.use(
+//   cors({
+//     origin: process.env.ALLOWED_ORIGINS,
+//     methods: ['GET', 'POST', 'PATCH', 'DELETE'],
+//     credentials: true
+//   })
+// );
+const allowedOrigins = ['https://tesla-giveaway.vercel.app', 'http://localhost:3000'];
+
+app.use(cors({
+  origin: function(origin, callback) {
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) === -1) {
+      var msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+      return callback(new Error(msg), false);
+    }
+    return callback(null, true);
+  },
+  methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+}));
 app.use(express.json());
 app.use((req, res, next) => {
   console.log(req.path, req.method);
@@ -32,6 +47,7 @@ app.use((err, req, res, next) => {
 app.get('/api/health', (req, res) => {
   res.status(200).json({ status: 'OK' });
 });
+app.options('*', cors()); // enable pre-flight across-the-board
 
 app.use("/api/tracking", trackingRouter);
 app.use("/api/auth", authenticationRouter);
