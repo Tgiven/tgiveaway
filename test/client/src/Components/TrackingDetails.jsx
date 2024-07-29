@@ -42,7 +42,7 @@ const [loadingHold, setLoadingHold] = useState(false);
 
     try {
       const response = await fetch(
-        "https://globalfreight-api.onrender.com/api/tracking/" + tracking._id,
+        "https://teslagiveaway-api.vercel.app/api/tracking/" + tracking._id,
         {
           method: "PATCH",
           headers: {
@@ -76,7 +76,7 @@ const [loadingHold, setLoadingHold] = useState(false);
   setLoadingHold(true);
   try {
     const response = await fetch(
-      "https://globalfreight-api.onrender.com/api/tracking/" + tracking._id,
+      "https://teslagiveaway-api.vercel.app/api/tracking/" + tracking._id,
       {
         method: "PATCH",
         headers: {
