@@ -59,8 +59,11 @@ const Admin = () => {
         method: "POST",
         body: JSON.stringify(tracking),
         headers: {
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
+          headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "https://tesla-giveaway.vercel.app",
+        // Add any other headers if necessary
+      },
           "Access-Control-Allow-Headers": "*",
         },
       }
