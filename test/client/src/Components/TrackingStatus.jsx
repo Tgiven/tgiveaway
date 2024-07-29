@@ -114,12 +114,13 @@ function TrackingStatus({ status, address, updateTime, name, content, trackingNu
             transform: 'translateX(-50%)',
             transition: 'left 0.5s ease-in-out',
           }}>
-            <div className={styles.pulsingCar}>
-              <CarIcon />
-            </div>
+            
           </div>
         </div>
       </div>
+      <div className={styles.pulsingCar}>
+              <CarIcon />
+            </div>
     );
   };
 
