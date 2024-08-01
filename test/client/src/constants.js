@@ -167,7 +167,7 @@ export const constants = {
       headline: "Subscribe to Newsletter",
       subscribe: "Subscribe",
     },
-    copyright: "© 2020 TeslaGiveaway. All rights reserved GlobalFreight team",
+    copyright: "© 2024 TeslaGiveaway. All rights reserved TeslaGiveaway team",
   },
   faq: {
     faq1: {
