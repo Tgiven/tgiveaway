@@ -177,17 +177,11 @@ export const constants = {
     },
     faq2: {
       headline: "Commitment",
-      subscribe: About Our Commitment to Sustainability This giveaway isn't just about winning a car—it's about promoting a sustainable future. Tesla is at the forefront of the electric vehicle revolution, helping to reduce global carbon emissions. By participating in this giveaway, you're not just entering to win a fantastic prize, you're also supporting the movement towards cleaner, greener transportation.`,
+      subscribe: `About Our Commitment to Sustainability This giveaway isn't just about winning a car—it's about promoting a sustainable future. Tesla is at the forefront of the electric vehicle revolution, helping to reduce global carbon emissions. By participating in this giveaway, you're not just entering to win a fantastic prize, you're also supporting the movement towards cleaner, greener transportation.`,
     },
     faq3: {
-      headline: "Tracking USPS International Packages",
-      subscribe: `USPS international package tracking can be done with a universal tracking solution. GlobalFreight does just that. You can enter your USPS international tracking number on the homepage and after a few seconds, GlobalFreight will give you all the tracking information needed for your package, whether it is domestic or international shipping. The great thing about tracking your USPS international package on GlobalFreight is that you can track up to 10 packages simultaneously.
-      
-      Although the USPS does have shipment tracking services as part of its operations, packages carried by the USPS are not just handled by the company and are more and more often being delivered by other couriers, subcontracted by the company. Therefore, packages handled by the US Postal Service could be passed over through different couriers as they make their journey to their final destination.
-
-Any number of handlers deliver packages for the USPS, depending on where the package's destination is, as well as the size and weight of a package in certain circumstances. Consequently, the tracking options available from USPS are sometimes lacklustre for individuals and businesses wanting the best possible tracking options for their shipments via the company.
-
-Similarly, you can also get tracking USPS international tracking from their tracking website as well. While you can track up to 35 tracking numbers on the USPS website, separating each tracking number by putting may be a hassle and time-consuming.`,
+      headline: "Your Prize Package Details As a winner, you're entitled to",
+      subscribe: `A brand new Tesla Model 3 Long Range (valued at $50,990), Free Supercharging for one year, Tesla Wall Connector for home charging, Exclusive Tesla merchandise package`,
     },
     faq4: {
       headline: "Tracking USPS Services",
