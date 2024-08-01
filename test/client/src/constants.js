@@ -10,7 +10,7 @@ export const constants = {
     navCTA: "Sign up",
   },
   heroSection: {
-    headline: "Track Your Package In One Place",
+    headline: "Track Your Tesla Giveaway",
     headlineSpan: "",
     subHeadline: "",
     heroCTA: "",
@@ -152,7 +152,7 @@ export const constants = {
     },
     contact: {
       headline: "Contact Information",
-      email: "Email: globalfreight101@gmail.com",
+      // email: "Email: globalfreight101@gmail.com",
       // phone: "Phone: +1-123-456-7890",
     },
     quickLinks: [
@@ -167,19 +167,19 @@ export const constants = {
       headline: "Subscribe to Newsletter",
       subscribe: "Subscribe",
     },
-    copyright: "© 2020 GlobalFreight. All rights reserved GlobalFreight team",
+    copyright: "© 2020 TeslaGiveaway. All rights reserved GlobalFreight team",
   },
   faq: {
     faq1: {
-      headline: "USPS tracking",
+      headline: "Tesla Giveaway",
       subscribe:
-        "USPS tracking is an optional feature for those who rely on the US Mail Service to send and receive packages,we offer services in Usa, UK, Canada, Germany, France and more. With the USPS tracking system, you can track the status of your shipments from the moment they are shipped until they are delivered. Every package shipped through the US Mail Service is assigned a unique USPS tracking number, also known as the US Mail Service Tracking Number, which is used to identify and track the package. USPS package tracking is available for most domestic and international shipping options, making it easier for you to stay informed about the status of your shipments regardless of where they are shipping to or from.Through the USPS tracking system, you can access information about the status of your packages such as the location, estimated delivery time, and delivery status.",
+        "Welcome to the Tesla Dream Giveaway
+Experience the future of driving with our exclusive Tesla giveaway! We're offering a chance to win a brand new Tesla Model 3, the revolutionary electric car that's changing the automotive landscape. Enter now and you could be cruising in style while reducing your carbon footprint.",
     },
     faq2: {
-      headline: "US Postal Service and Mail Tracking",
-      subscribe: `Tracking your USPS package is a simple process that can be done on the USPS website or through a third-party tracking site like GlobalFreight. To track your package or mail item, you need your USPS tracking number, which can be found on your shipping label or package receipt.
-        Once you have the tracking number, go to the website or to the search field above, and enter the USPS number in the tracking field. The tracking notifications will then be displayed, showing the status of your packages or mail and any updates on its location and expected delivery date.
-        While USPS tracking can only track USPS packages, the universal GlobalFreight tracking system makes package tracking a non-issue. GlobalFreight constantly connects and scans hundreds of couriers and even more online shops, making sure you keep the most up-to-date with any developments on your USPS package. it can perform global tracking effectively regardless of the courier.`,
+      headline: "Commitment",
+      subscribe: About Our Commitment to Sustainability
+This giveaway isn't just about winning a car—it's about promoting a sustainable future. Tesla is at the forefront of the electric vehicle revolution, helping to reduce global carbon emissions. By participating in this giveaway, you're not just entering to win a fantastic prize, you're also supporting the movement towards cleaner, greener transportation.`,
     },
     faq3: {
       headline: "Tracking USPS International Packages",
