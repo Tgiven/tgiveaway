@@ -151,72 +151,6 @@ function LandingPage() {
           description={constants.faq.faq3.subscribe}
         />
       </div>
-      <div className={css.benefitsContainer}>
-        <Benefits
-          title={constants.faq.faq4.headline}
-          description={constants.faq.faq4.subscribe}
-        />
-      </div>
-      <div className={css.benefitsContainer}>
-        <Benefits
-          title={constants.faq.faq5.headline}
-          description={constants.faq.faq5.subscribe}
-        />
-      </div>
-      <div className={css.benefitsContainer}>
-        <Benefits
-          title={constants.faq.faq6.headline}
-          description={constants.faq.faq6.subscribe}
-        />
-      </div>
-      <div className={css.benefitsContainer}>
-        <Benefits
-          title={constants.faq.faq7.headline}
-          description={constants.faq.faq7.subscribe}
-        />
-      </div>
-      <div className={css.benefitsContainer}>
-        <Benefits
-          title={constants.faq.faq8.headline}
-          description={constants.faq.faq8.subscribe}
-        />
-      </div>
-      <div className={css.benefitsContainer}>
-        <Benefits
-          title={constants.faq.faq9.headline}
-          description={constants.faq.faq9.subscribe}
-        />
-      </div>
-      <div className={css.benefitsContainer}>
-        <Benefits
-          title={constants.faq.faq10.headline}
-          description={constants.faq.faq10.subscribe}
-        />
-      </div>
-      <div className={css.benefitsContainer}>
-        <Benefits
-          title={constants.faq.faq11.headline}
-          description={constants.faq.faq11.subscribe}
-        />
-      </div>
-      <div className={css.benefitsContainer}>
-        <Benefits
-          title={constants.faq.faq12.headline}
-          description={constants.faq.faq12.subscribe}
-        />
-      </div>
-      <div className={css.benefitsContainer}>
-        <Benefits
-          title={constants.faq.faq13.headline}
-          description={constants.faq.faq13.subscribe}
-        />
-      </div>
-      <div className={css.benefitsContainer}>
-        <Benefits
-          title={constants.faq.faq14.headline}
-          description={constants.faq.faq14.subscribe}
-        />
-      </div>
 
       {/* end of the footer */}
       <div className={css.footerContainer}>
@@ -224,14 +158,14 @@ function LandingPage() {
           <div className={css.brandContentWrap}>
             <div className={css.footerbrandWrap}>
               <p>
-                <span>Global</span>Freight
+                <span>Tesla</span>Giveaway
               </p>
             </div>
             <p className={css.brandQuote}>{constants.footer.brand.quote}</p>
           </div>
         </div>
         <p className={css.copyright}>{constants.footer.copyright}</p>
-        <p className={css.copyright}>{constants.footer.copyright}</p>
+{/*         <p className={css.copyright}>{constants.footer.copyright}</p> */}
       </div>
     </div>
   );
