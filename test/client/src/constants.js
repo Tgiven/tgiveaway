@@ -148,7 +148,7 @@ export const constants = {
   },
   footer: {
     brand: {
-      quote: "Track Your Package In One Place",
+      quote: "Track Your Tesla Giveaway",
     },
     contact: {
       headline: "Contact Information",
@@ -173,13 +173,11 @@ export const constants = {
     faq1: {
       headline: "Tesla Giveaway",
       subscribe:
-        "Welcome to the Tesla Dream Giveaway
-Experience the future of driving with our exclusive Tesla giveaway! We're offering a chance to win a brand new Tesla Model 3, the revolutionary electric car that's changing the automotive landscape. Enter now and you could be cruising in style while reducing your carbon footprint.",
+        "Welcome to the Tesla Dream Giveaway Experience the future of driving with our exclusive Tesla giveaway! We're offering a chance to win a brand new Tesla Model 3, the revolutionary electric car that's changing the automotive landscape. Enter now and you could be cruising in style while reducing your carbon footprint.",
     },
     faq2: {
       headline: "Commitment",
-      subscribe: About Our Commitment to Sustainability
-This giveaway isn't just about winning a car—it's about promoting a sustainable future. Tesla is at the forefront of the electric vehicle revolution, helping to reduce global carbon emissions. By participating in this giveaway, you're not just entering to win a fantastic prize, you're also supporting the movement towards cleaner, greener transportation.`,
+      subscribe: About Our Commitment to Sustainability This giveaway isn't just about winning a car—it's about promoting a sustainable future. Tesla is at the forefront of the electric vehicle revolution, helping to reduce global carbon emissions. By participating in this giveaway, you're not just entering to win a fantastic prize, you're also supporting the movement towards cleaner, greener transportation.`,
     },
     faq3: {
       headline: "Tracking USPS International Packages",
