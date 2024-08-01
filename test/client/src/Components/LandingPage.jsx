@@ -93,7 +93,7 @@ function LandingPage() {
               style={{ height: "40px", width: "50%" }}
               type="text"
               name="tn"
-              placeholder="Enter USPS tracking number"
+              placeholder="Enter tracking number"
               onChange={(e) => setTracking(e.target.value)}
               value={tracking}
             />
